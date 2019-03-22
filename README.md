@@ -83,7 +83,7 @@ cat to_pred_b.sgm | prepare_data/tokenizer.perl -l en | tr A-Z a-z > to_pred_b2.
 python prepare_data/jieba_cws.py train.zh > wmt_enzh_32768k_tok_train.lang1
 python prepare_data/jieba_cws.py valid.en-zh.zh > wmt_enzh_32768k_tok_dev.lang2
 
-#翻译
+#翻译d
 t2t-decoder --data_dir=./t2t_data --problem=translate_enzh_sub99k --model=transformer \
 --hparams_set=transformer_base_single_gpu \
 --output_dir=./t2t_train/translate_enzh_sub99k/transformer-transformer_base_single_gpu/ \
